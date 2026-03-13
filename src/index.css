@@ -1,68 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --gold: #C9A84C;
+  --gold-light: #E2C47A;
+  --gold-dark: #9A7A30;
+  --navy: #0D1B2A;
+  --navy-light: #152336;
+  --navy-mid: #1A2D42;
+  --navy-accent: #1B263B;
+  --cream: #F5F0E8;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+* {
+  box-sizing: border-box;
 }
-a:hover {
-  color: #535bf2;
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--navy);
+  color: #e8e2d9;
+  overflow-x: hidden;
+  line-height: 1.6;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Custom Container for Desktop Spacing */
+.container-wide {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
+
+/* Hero text gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #E2C47A 0%, #C9A84C 50%, #9A7A30 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.section-divider {
+  width: 80px;
+  height: 2px;
+  background: var(--gold);
+  margin: 24px 0 40px;
+}
+
+.card-lift {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+  border-color: rgba(201,168,76,0.5);
+}
+
+/* Typography Overrides */
+.font-display { 
+  font-family: 'Inter Tight', sans-serif; 
+  letter-spacing: -0.04em; /* This is the secret sauce for that high-end look */
+  text-transform: uppercase;
+}
+
+.font-serif-bold {
+  font-family: 'Fraunces', serif;
+  font-variation-settings: "SOFT" 100, "WONK" 1;
+}
+
+.font-body { font-family: 'DM Sans', sans-serif; }
+
+/* Refined Section Divider */
+.section-divider {
+  width: 120px;
+  height: 4px;
+  background: var(--gold);
+  margin: 24px 0 40px;
 }

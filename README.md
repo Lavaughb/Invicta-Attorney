@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# Rohan Palmer — Law Firm Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Run dev server
 
-Currently, two official plugins are available:
+npx vite --host 127.0.0.1     
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## File Structure
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+project-root/
+├── index.html                     (existing — no changes needed)
+├── vite.config.ts                 (existing — no changes needed)
+├── tsconfig.json                  (existing — no changes needed)
+├── package.json                   ← ADD react-router-dom (see below)
+├── tailwind.config.js             ← REPLACE with provided file
+│
+└── src/
+    ├── index.css                  ← REPLACE with provided file
+    ├── main.tsx                   ← REPLACE with provided file
+    ├── App.tsx                    ← REPLACE with provided file
+    │
+    ├── components/
+    │   ├── Navbar.tsx             ← NEW
+    │   ├── Footer.tsx             ← NEW
+    │   └── Layout.tsx             ← NEW
+    │
+    └── pages/
+        ├── Home.tsx               ← NEW (full home page)
+        ├── Results.tsx            ← NEW (placeholder)
+        ├── Services.tsx           ← NEW (placeholder)
+        └── Contact.tsx            ← NEW (full contact page)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Design System
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Colors:**
+- `#C9A84C` — Gold (primary accent)
+- `#0D1B2A` — Deep Navy (background)
+- `#152336` — Navy Light (cards)
+- `#1A2D42` — Navy Mid (sections)
+- `#F5F0E8` — Cream (text)
+
+**Fonts (loaded via Google Fonts in index.css):**
+- `Playfair Display` — Headlines, display text
+- `DM Sans` — Body, UI, labels
+
+**Key classes:**
+- `.gold-underline` — Adds gold underline accent
+- `.section-divider` — 60px gold rule
+- `.card-lift` — Hover lift animation
+- `.text-gradient` — Gold gradient text
+- `.grain` — Subtle film grain overlay
+
+---
+## Next Steps
+
+1. **Attorney Photo**: Replace the placeholder in `Home.tsx` hero with a real `<img>` tag
+2. **Logo**: Update the `JB` monogram in `Navbar.tsx` with an SVG logo file
+3. **Phone Number**: Update `PHONE` and `PHONE_HREF` constants in `Navbar.tsx` and `Home.tsx`
+4. **Form Backend**: Wire up the contact forms to a service (Formspree, EmailJS, etc.)
+5. **Results Page**: Populate with real case results
+6. **Services Page**: Build out with full practice area detail pages
+7. **SEO**: Add meta tags, Open Graph, and structured data
+
+---
