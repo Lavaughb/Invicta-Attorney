@@ -65,7 +65,7 @@ function ContactForm({ compact = false }: { compact?: boolean }) {
       {!compact && (
         <div className="mb-2">
           <p className="text-gold text-[10px] uppercase tracking-[0.3em] font-black mb-2">Priority Access</p>
-          <h3 className="font-display text-4xl font-black text-cream uppercase tracking-tighter leading-none">Secure Case Submission</h3>
+          <h3 className="font-display text-4xl font-black text-cream uppercase tracking-tighter leading-none">REACH OUT</h3>
         </div>
       )}
 
