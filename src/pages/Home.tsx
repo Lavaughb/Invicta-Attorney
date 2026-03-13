@@ -7,7 +7,6 @@ import {
   FaPhoneAlt,
   FaCheckCircle,
 } from 'react-icons/fa'
-import { MdSend } from 'react-icons/md'
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
 const PHONE = '(800) 555-0199'
