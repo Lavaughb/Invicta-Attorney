@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { FaPhoneAlt, FaEnvelope, FaCheckCircle } from 'react-icons/fa'
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
-const PHONE = '(800) 555-0199'
-const PHONE_HREF = 'tel:8005550199'
-const EMAIL = 'info@jamesblackwood.com'
-const FORMSPREE_URL = 'https://formspree.io/f/mjgaowao' // <--- REPLACE THIS
+const PHONE = '(407) 520-6985'
+const PHONE_HREF = 'tel:4075206985'
+const EMAIL = 'invictajr@gmail.com'
+const FORMSPREE_URL = 'https://formspree.io/f/mjgaowao'
 
-const LEGAL_DISCLAIMER = `By submitting my phone number above I authorize James & Blackwood, and its service providers, to deliver calls including using an automatic telephone dialing system or artificial or prerecorded voice...`
+const LEGAL_DISCLAIMER = `By submitting my phone number above I authorize Rohan C. Palmer, Attorney at Law, and its service providers, to deliver calls including using an automatic telephone dialing system or artificial or prerecorded voice, to the number submitted. Consent is not a condition to receive services. Msg frequency varies. Msg & data rates may apply. Upon receipt of any message, reply STOP to unsubscribe. By submitting this form, you agree to our Terms & acknowledge our privacy policy. Results may vary depending on your particular facts and legal circumstances. ©2026 Rohan C. Palmer, Attorney at Law. All rights reserved.`
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function Contact() {
@@ -41,9 +41,9 @@ export default function Contact() {
       {/* ─── HEADER ─── */}
       <section className="pt-32 lg:pt-40 pb-8 lg:pb-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center lg:text-left">
-          <p className="text-gold text-[10px] uppercase tracking-[0.5em] font-black mb-4">Priority Legal Access</p>
+          <p className="text-gold text-[10px] uppercase tracking-[0.5em] font-black mb-4">Let's Talk</p>
           <h1 className="font-display text-5xl lg:text-7xl font-black text-cream leading-[0.85] tracking-tighter uppercase">
-            Start Your <span className="text-gradient font-serif-bold italic lowercase tracking-tight">Recovery.</span>
+            Get in <span className="text-gradient font-serif-bold italic lowercase tracking-tight">Touch.</span>
           </h1>
         </div>
       </section>
@@ -54,7 +54,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
             <div className="lg:col-span-4 space-y-10">
-              <h2 className="font-display text-2xl lg:text-3xl font-black text-cream uppercase tracking-tighter">Connect with<br/>a Partner</h2>
+              <h2 className="font-display text-2xl lg:text-3xl font-black text-cream uppercase tracking-tighter">Speak Directly<br/>With Me</h2>
               <div className="space-y-6">
                 <a href={PHONE_HREF} className="flex items-center gap-5 group">
                   <div className="w-12 h-12 border border-gold/20 flex items-center justify-center group-hover:border-gold transition-all">
@@ -77,14 +77,14 @@ export default function Contact() {
                   <div className="text-center py-20 animate-fade-up">
                     <FaCheckCircle className="text-gold text-6xl mx-auto mb-6" />
                     <h3 className="font-display text-3xl text-gold font-black uppercase">Submitted</h3>
-                    <p className="text-cream/60 mt-4">An analyst has been notified. Stand by for contact.</p>
+                    <p className="text-cream/60 mt-4">I'll personally get back to you within 24 hours.</p>
                     <button onClick={() => setStatus('idle')} className="mt-8 text-gold/40 text-xs uppercase tracking-widest underline">New Inquiry</button>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="flex flex-col gap-8">
                     {status === 'error' && (
                       <div className="bg-red-900/20 border border-red-500/50 p-4 text-red-200 text-xs uppercase tracking-widest">
-                        Transmission Error. Please call {PHONE} directly.
+                        Something went wrong. Please call {PHONE} directly.
                       </div>
                     )}
                     

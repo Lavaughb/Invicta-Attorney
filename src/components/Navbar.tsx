@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-const PHONE = '(800) 555-0199'
-const PHONE_HREF = 'tel:8005550199'
+const PHONE = '(407) 520-6985'
+const PHONE_HREF = 'tel:(407) 520-6985'
 
 const navLinks = [
   { label: 'Home', to: '/' },

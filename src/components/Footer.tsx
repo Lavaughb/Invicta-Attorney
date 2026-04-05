@@ -17,10 +17,10 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-cream/50 text-sm leading-relaxed max-w-xs font-body">
-              Fighting for justice with integrity and relentless dedication. Your fight is our fight.
+              Serving our community with integrity and personal dedication. Your fight is my fight.
             </p>
             <p className="text-gold/60 text-xs mt-6 font-body">
-              © {new Date().getFullYear()} Rohan C. Palmer, P.A. All rights reserved.
+              © {new Date().getFullYear()} Rohan C. Palmer, Attorney at Law. All rights reserved.
             </p>
           </div>
 
@@ -40,11 +40,8 @@ export default function Footer() {
           <div>
             <h4 className="text-gold text-xs uppercase tracking-widest font-body font-bold mb-6">Contact</h4>
             <ul className="space-y-3 text-cream/60 text-sm font-body">
-              <li><a href="tel:8005550199" className="hover:text-gold transition-colors">(800) 555-0199</a></li>
-              <li><a href="mailto:info@jamesblackwood.com" className="hover:text-gold transition-colors">info@RP.com</a></li>
-              <li className="text-cream/40 leading-relaxed">
-                123 Justice Boulevard<br />Suite 1000<br />Atlanta, GA 30303
-              </li>
+              <li><a href="tel:4075206985" className="hover:text-gold transition-colors">(407) 520-6985</a></li>
+              <li><a href="mailto:invictajr@gmail.com" className="hover:text-gold transition-colors">invictajr@gmail.com</a></li>
             </ul>
           </div>
         </div>
