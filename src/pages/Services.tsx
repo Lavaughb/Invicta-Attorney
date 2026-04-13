@@ -6,7 +6,7 @@ import {
   LuBuilding2,
   LuShieldCheck,
   LuLandmark,
-  LuCheckCircle,
+  LuCircleCheck,
 } from 'react-icons/lu'
 
 const PHONE = '(407) 520-6985'
@@ -162,7 +162,7 @@ export default function Services() {
                   <ul className="space-y-5">
                     {points.map((point) => (
                       <li key={point} className="flex items-start gap-4">
-                        <LuCheckCircle className="text-gold text-lg mt-0.5 shrink-0" />
+                        <LuCircleCheck className="text-gold text-lg mt-0.5 shrink-0" />
                         <span className="text-cream/70 font-body text-sm leading-relaxed">{point}</span>
                       </li>
                     ))}
