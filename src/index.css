@@ -5,10 +5,10 @@
   --gold: #C9A84C;
   --gold-light: #E2C47A;
   --gold-dark: #9A7A30;
-  --navy: #0D1B2A;
-  --navy-light: #152336;
-  --navy-mid: #1A2D42;
-  --navy-accent: #1B263B;
+  --navy: #0E1D33;
+  --navy-light: #1A2D4D;
+  --navy-mid: #253E66;
+  --navy-accent: #34568A;
   --cream: #F5F0E8;
 }
 
@@ -18,11 +18,18 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 18px;
 }
 
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: var(--navy);
+  background-image:
+    radial-gradient(ellipse at 85% 8%, rgba(201, 168, 76, 0.10) 0%, transparent 55%),
+    radial-gradient(ellipse at 10% 95%, rgba(201, 168, 76, 0.06) 0%, transparent 55%),
+    linear-gradient(165deg, var(--navy) 0%, var(--navy-light) 30%, var(--navy-mid) 55%, var(--navy-light) 80%, var(--navy) 100%);
+  background-attachment: fixed;
+  background-size: 100% 100%;
   color: #e8e2d9;
   overflow-x: hidden;
   line-height: 1.6;

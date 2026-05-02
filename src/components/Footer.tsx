@@ -9,18 +9,18 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-8 border border-gold flex items-center justify-center rotate-45">
-                <span className="text-gold font-display font-black text-xs -rotate-45">RP</span>
+                <span className="text-gold font-display font-black text-xs -rotate-45">IA</span>
               </div>
               <div>
-                <p className="font-display font-bold text-cream text-sm uppercase tracking-wider">Rohan C. Palmer</p>
-                <p className="text-gold text-[10px] tracking-widest uppercase">Attorney at Law</p>
+                <p className="font-display font-bold text-cream text-sm uppercase tracking-wider">Invicta Attorney</p>
+                <p className="text-gold text-[10px] tracking-widest uppercase">A Florida Law Firm</p>
               </div>
             </div>
             <p className="text-cream/50 text-sm leading-relaxed max-w-xs font-body">
               Serving our community with integrity and personal dedication. Your fight is my fight.
             </p>
             <p className="text-gold/60 text-xs mt-6 font-body">
-              © {new Date().getFullYear()} Rohan C. Palmer, Attorney at Law. All rights reserved.
+              © {new Date().getFullYear()} Invicta Attorney, PLLC. All rights reserved.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h4 className="text-gold text-xs uppercase tracking-widest font-body font-bold mb-6">Navigation</h4>
             <ul className="space-y-3">
-              {[['Home', '/'], ['Results', '/results'], ['Services', '/services'], ['Contact', '/contact']].map(([label, to]) => (
+              {[['Home', '/'], ['Services', '/services'], ['Contact', '/contact']].map(([label, to]) => (
                 <li key={to}>
                   <Link to={to} className="text-cream/60 hover:text-gold text-sm font-body transition-colors">{label}</Link>
                 </li>
@@ -40,8 +40,8 @@ export default function Footer() {
           <div>
             <h4 className="text-gold text-xs uppercase tracking-widest font-body font-bold mb-6">Contact</h4>
             <ul className="space-y-3 text-cream/60 text-sm font-body">
-              <li><a href="tel:4075206985" className="hover:text-gold transition-colors">(407) 520-6985</a></li>
-              <li><a href="mailto:invictajr@gmail.com" className="hover:text-gold transition-colors">invictajr@gmail.com</a></li>
+              <li><a href="tel:4072192580" className="hover:text-gold transition-colors">(407) 219-2580</a></li>
+              <li><a href="mailto:invictadefense@gmail.com" className="hover:text-gold transition-colors">invictadefense@gmail.com</a></li>
             </ul>
           </div>
         </div>

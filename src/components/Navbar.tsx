@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-const PHONE = '(407) 520-6985'
-const PHONE_HREF = 'tel:(407) 520-6985'
+const PHONE = '(407) 219-2580'
+const PHONE_HREF = 'tel:4072192580'
 
 const navLinks = [
   { label: 'Home', to: '/' },
-  { label: 'Results', to: '/results' },
   { label: 'Services', to: '/services' },
   { label: 'Contact', to: '/contact' },
 ]
@@ -40,11 +39,11 @@ export default function Navbar() {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
               <div className="w-10 h-10 border-2 border-gold flex items-center justify-center rotate-45 group-hover:rotate-0 transition-transform duration-500">
-                <span className="text-gold font-display font-black text-sm -rotate-45 group-hover:rotate-0 transition-transform duration-500">RP</span>
+                <span className="text-gold font-display font-black text-sm -rotate-45 group-hover:rotate-0 transition-transform duration-500">IA</span>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-display font-bold text-cream text-base tracking-wider uppercase">Rohan C. Palmer</span>
-                <span className="text-gold text-[10px] tracking-[0.25em] uppercase font-body font-medium">Attorney at Law</span>
+                <span className="font-display font-bold text-cream text-base tracking-wider uppercase">Invicta Attorney</span>
+                <span className="text-gold text-[10px] tracking-[0.25em] uppercase font-body font-medium">A Florida Law Firm</span>
               </div>
             </Link>
 

@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         gold: { DEFAULT: '#C9A84C', light: '#E2C47A', dark: '#9A7A30' },
-        navy: { DEFAULT: '#0D1B2A', light: '#152336', mid: '#1A2D42', accent: '#1E3A5F' },
+        navy: { DEFAULT: '#0E1D33', light: '#1A2D4D', mid: '#253E66', accent: '#34568A' },
         cream: '#F5F0E8',
         charcoal: '#1C1C1E',
       },
