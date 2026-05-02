@@ -1,5 +1,4 @@
 import { useState, useRef } from 'react'
-import { Link } from 'react-router-dom'
 import { FaPhoneAlt, FaCheckCircle } from 'react-icons/fa'
 import {
   LuScale,
